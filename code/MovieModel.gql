@@ -1,0 +1,8 @@
+type Movie {
+  id: ID!
+  # ...
+  credits: {
+    cast: [Person]
+    crew: [Person]
+  }
+}

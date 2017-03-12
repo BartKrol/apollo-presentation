@@ -1,0 +1,4 @@
+<MovieCard>
+  <Poster />
+  <ActorSection />
+</MovieCard>

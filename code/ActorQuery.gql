@@ -1,0 +1,16 @@
+  query getMovies {
+    movies {
+      id,
+      title,
+-     poster
++     poster,
++     cast(limit: 3) {
++       character,
++       actor {
++         id,
++         name,
++         photo(width: 100, height: 100)
++       }
++     }
+    }
+  }

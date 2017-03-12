@@ -1,0 +1,13 @@
+const query = gql`
+  query getMovies
+    movies {
+      ...MovieCardInfo
+      cast {
+        ...CastDetails
+      }
+    }
+  }
+
+  ${MovieCard.fragments.movie}
+  ${ActorsSection.fragments.cast}
+`

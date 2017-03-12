@@ -1,0 +1,6 @@
+subscription onCommentAdded ($movieId: String!) {
+  commentAdded (id: $movieId) {
+    id
+    content
+  }
+}

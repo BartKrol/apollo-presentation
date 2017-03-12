@@ -1,0 +1,14 @@
+import ApolloClient, { createNetworkInterface } from 'apollo-client'
+import { ApolloProvider } from 'react-apollo'
+import App from './App'
+
+const client = new ApolloClient({
+  networkInterface: createNetworkInterface({ uri: '/graphql' }),
+})
+
+ReactDOM.render(
+  <ApolloProvider client={ client }>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
+)

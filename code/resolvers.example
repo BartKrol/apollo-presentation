@@ -1,0 +1,19 @@
+const movies = require('movies-api')
+
+const resolveFunctions = {
+  Query: {
+    movies() {
+      return movies.getList()
+    },
+    movie(root, args) {
+      return movie.get(args.id)
+    }
+  },
+  Movie: {
+    poster(root) {
+      return `${movies.getBaseImageUrl()}${root.poster_path}`
+    }
+  }
+}
+
+module.exports = resolveFunctions

@@ -1,0 +1,8 @@
+type Movie {
+  id: ID!
+  title: String!
+  poster: String
+  overview: String
+  score: Int
+  cast: [Actor]
+}

@@ -1,0 +1,17 @@
+// const withMutation = graphql(submitComment, {
+//   props: ({ ownProps, mutate }) => ({
+//     submit: ({ movieId, commentContent }) => mutate({
+//       variables: { movieId, commentContent },
+
+         optimisticResponse: {
+           __typename: 'Mutation',
+           submitComment: {
+             __typename: 'Comment',
+             postedBy: ownProps.currentUser,
+             createdAt: new Date,
+             content: commentContent
+           }
+//      }
+//    })
+//  })
+// })
