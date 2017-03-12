@@ -1,7 +1,4 @@
-// Import React
 import React from "react";
-
-// Import Spectacle Core tags
 import {
   Appear,
   CodePane,
@@ -17,16 +14,10 @@ import {
   Code
 } from "spectacle";
 import CodeSlide from "spectacle-code-slide";
-
-// Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
-
-// Import theme
 import createTheme from "spectacle/lib/themes/default";
-
-// Require CSS
-require("normalize.css");
-require("spectacle/lib/themes/default/index.css");
+import "normalize.css";
+import "spectacle/lib/themes/default/index.css";
 
 
 const images = {
@@ -51,7 +42,7 @@ const images = {
   chart3: require("../assets/chart3.png"),
   chart4: require("../assets/chart4.png"),
   wow: require("../assets/wow.gif"),
-  mvp: require("../assets/mvp.svg") // https://www.draw.io/#G0Byx8VTBQ857pTWtFWnRUek53QVk
+  mvp: require("../assets/mvp.svg")
 };
 
 preloader(images);
